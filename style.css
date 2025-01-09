@@ -1,0 +1,226 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+header .logo {
+  text-align: center;
+}
+
+header nav {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+header .menu {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+}
+
+header .menu > li {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+}
+
+header .menu a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 15px;
+  display: block;
+}
+
+header .menu .submenu {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  list-style: none;
+  padding: 10px 0;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+}
+
+header .menu .submenu li {
+  text-align: left;
+  margin: 0;
+}
+
+header .menu .submenu li a {
+  color: #fff;
+  padding: 8px 15px;
+  display: block;
+}
+
+header .menu li:hover > .submenu {
+  display: block;
+}
+
+header .menu .submenu .submenu {
+  top: 0;
+  left: 100%;
+  margin-left: 5px;
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
+}
+
+.banner {
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.products {
+  margin-top: 2rem;
+}
+
+.products .product-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.products .product-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  flex: 1;
+}
+
+.products .product-item img {
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+/* Chi tiết sản phẩm */
+.product-details {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #fff;
+  margin: 2rem auto;
+  max-width: 1200px;
+  border: 1px solid #ddd;
+}
+
+.product-images {
+  flex: 1;
+}
+
+.product-images .main-image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+.product-images .thumbnail-images {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.product-images .thumbnail-images img {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.product-images .thumbnail-images img:hover {
+  transform: scale(1.1);
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.product-info .price {
+  font-size: 1.5rem;
+  color: #e74c3c;
+  margin-bottom: 1rem;
+}
+
+.product-info .description {
+  margin-bottom: 2rem;
+}
+
+.product-info .add-to-cart {
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-info .add-to-cart:hover {
+  background-color: #2ecc71;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}
+/* Style cho combo box chọn size */
+.size-selector {
+  margin: 1rem 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.size-selector label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.size-selector select {
+  padding: 8px 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.size-selector select:hover {
+  border-color: #888;
+}
+
+.size-selector select:focus {
+  border-color: #555;
+  box-shadow: 0 0 5px rgba(85, 85, 85, 0.5);
+  outline: none;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi Tiết Sản Phẩm</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Shop Quần Áo</h1>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="hello.html">Trang Chủ</a></li>
+          <li>
+            <a href="#">Sản Phẩm</a>
+            <ul class="submenu">
+              <li><a href="#">Áo</a></li>
+              <li><a href="#">Quần</a></li>
+              <li>
+                <a href="#">Phụ Kiện</a>
+                <ul class="submenu">
+                  <li><a href="#">Mũ</a></li>
+                  <li><a href="#">Giày</a></li>
+                  <li><a href="#">Túi Xách</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Giới Thiệu</a></li>
+          <li><a href="#">Liên Hệ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="product-details">
+        <div class="product-images">
+          <img
+            src="https://bizweb.dktcdn.net/100/415/697/products/ts295-ada28098-5e56-4374-a938-1f94b54db3ad.jpg?v=1733559506353"
+            alt="Áo Thun"
+            class="main-image"
+          />
+          <div class="thumbnail-images">
+            <img
+              src="https://bizweb.dktcdn.net/100/415/697/products/6-5a68750e-faea-4a17-8762-d96337f48859.jpg?v=1733559508967"
+              alt="Áo Thun"
+            />
+            <img
+              src="https://bizweb.dktcdn.net/100/415/697/products/3-7cc7eb37-acf5-4c8f-9ae7-d16831cee914.jpg?v=1733559508967"
+              alt="Áo Thun Mặt Sau"
+            />
+            <img
+              src="https://bizweb.dktcdn.net/100/415/697/products/5-91fba8db-5eb6-47f4-856b-c419a62edf8b.jpg?v=1733813839013"
+              alt="Áo Thun Nghiêng"
+            />
+          </div>
+        </div>
+        <div class="product-info">
+          <h2>Áo Thun Thể Thao</h2>
+          <p class="price">Giá: 200.000 VND</p>
+          <p class="description">
+            Áo thun thể thao chất liệu cotton cao cấp, thấm hút mồ hôi, phù hợp
+            với mọi hoạt động ngoài trời và thể thao.
+          </p>
+          <button class="add-to-cart">Thêm Vào Giỏ Hàng</button>
+        </div>
+        <div class="size-selector">
+          <label for="size">Chọn Size:</label>
+          <select id="size" name="size">
+            <option value="s">Size S</option>
+            <option value="m">Size M</option>
+            <option value="l">Size L</option>
+            <option value="xl">Size XL</option>
+            <option value="xxl">Size XXL</option>
+          </select>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Shop Quần Áo. All rights reserved.</p>
+    </footer>
+    <script>
+      const thumbnails = document.querySelectorAll(".thumbnail-images img");
+      const mainImage = document.querySelector(".main-image");
+
+      thumbnails.forEach((thumbnail) => {
+        thumbnail.addEventListener("click", () => {
+          mainImage.src = thumbnail.src;
+        });
+      });
+    </script>
+  </body>
+</html>
